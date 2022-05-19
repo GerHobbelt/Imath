@@ -1,3 +1,5 @@
 build/
 _build/
 _install/
+
+_rez_build
