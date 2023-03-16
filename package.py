@@ -1,6 +1,6 @@
 name = "imath"
 
-version = "3.1.5"
+version = "3.1.5.sse.1.0.0"
 
 authors = [
     "ILM & AcademySoftwareFoundation"
@@ -39,7 +39,7 @@ variants = [
     ["platform-linux", "arch-x86_64", "os-centos-7"],
 ]
 
-uuid = "repository.pystring"
+uuid = "repository.Imath"
 
 build_system = "cmake"
 
@@ -49,4 +49,6 @@ def pre_build_commands():
 
 def commands():
     env.IMATH_ROOT_DIR = "{root}"
+    env.Imath_ROOT = "{root}"
+    env.Imath_DIR = "{root}"
     env.LD_LIBRARY_PATH.append("{root}/lib64")
