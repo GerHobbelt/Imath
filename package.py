@@ -50,5 +50,5 @@ def pre_build_commands():
 def commands():
     env.IMATH_ROOT_DIR = "{root}"
     env.Imath_ROOT = "{root}"
-    env.Imath_DIR = "{root}"
+    env.Imath_DIR = "{root}/lib64/cmake/Imath"
     env.LD_LIBRARY_PATH.append("{root}/lib64")
