@@ -10,6 +10,11 @@
 #ifndef INCLUDED_IMATHGL_H
 #define INCLUDED_IMATHGL_H
 
+#if defined(_WIN32)
+#include <windows.h>
+#undef min
+#undef max
+#endif
 #include <GL/gl.h>
 
 #include "ImathFun.h"

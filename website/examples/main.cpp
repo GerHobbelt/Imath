@@ -22,7 +22,7 @@ void vec4_example ();
 void half_example ();
 
 int
-main (int argc, char* argv[])
+main (int argc, const char** argv)
 {
     std::cout << "imath examples..." << std::endl;
 
