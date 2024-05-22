@@ -48,7 +48,7 @@
     if (argc < 2 || !strcmp (argv[1], #x)) x ();
 
 int
-main (int argc, char* argv[])
+main (int argc, const char** argv)
 {
     // NB: If you add a test here, make sure to enumerate it in the
     // CMakeLists.txt so it runs as part of the test suite
