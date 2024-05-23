@@ -1,4 +1,5 @@
 #include <Imath/ImathBox.h>
+#include <cassert>
 
 void
 box_example ()
