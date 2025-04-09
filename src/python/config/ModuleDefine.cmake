@@ -125,7 +125,6 @@ function(PYIMATH_DEFINE_MODULE modname)
       set_target_properties(${modname}_python2 PROPERTIES
         LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/python${Python2_VERSION_MAJOR}_${Python2_VERSION_MINOR}/"
         LIBRARY_OUTPUT_NAME "${modname}"
-        DEBUG_POSTFIX ""
       )
       install(TARGETS ${modname}_python2 DESTINATION ${PyImath_Python2_SITEARCH_REL})
     endif()
@@ -152,7 +151,6 @@ function(PYIMATH_DEFINE_MODULE modname)
       set_target_properties(${modname}_python3 PROPERTIES
         LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/python${Python3_VERSION_MAJOR}_${Python3_VERSION_MINOR}/"
         LIBRARY_OUTPUT_NAME "${modname}"
-        DEBUG_POSTFIX ""
       )
       install(TARGETS ${modname}_python3 DESTINATION ${PyImath_Python3_SITEARCH_REL})
     endif()

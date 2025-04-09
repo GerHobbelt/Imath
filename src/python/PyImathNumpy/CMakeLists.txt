@@ -20,7 +20,6 @@ if(TARGET Python2::Python AND
   set_target_properties(imathnumpy_python2 PROPERTIES
     LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/python${Python2_VERSION_MAJOR}_${Python2_VERSION_MINOR}/"
     LIBRARY_OUTPUT_NAME "imathnumpy"
-    DEBUG_POSTFIX ""
   )
   install(TARGETS imathnumpy_python2 DESTINATION ${PyImath_Python2_SITEARCH_REL})
 endif()
@@ -46,7 +45,6 @@ if(TARGET Python3::Python AND
   set_target_properties(imathnumpy_python3 PROPERTIES
     LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/python${Python3_VERSION_MAJOR}_${Python3_VERSION_MINOR}/"
     LIBRARY_OUTPUT_NAME "imathnumpy"
-    DEBUG_POSTFIX ""
   )
   install(TARGETS imathnumpy_python3 DESTINATION ${PyImath_Python3_SITEARCH_REL})
 endif()
