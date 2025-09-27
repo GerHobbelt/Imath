@@ -227,7 +227,7 @@ testInteropVec2 ()
     assert ((!has_subscript<xyz<float>, float, 2>::value));
     assert ((!has_subscript<xy<float>, float, 2>::value));
 
-    // Test construction/assignment/paramater pass of a vector type with
+    // Test construction/assignment/parameter pass of a vector type with
     // subscripting to access components.
     {
         SimpleVec<float, 2> s;
@@ -240,7 +240,7 @@ testInteropVec2 ()
         assert (v[0] == 1 && v[1] == 42);
         testVecVal2f (V2f (s), 1.0f, 42.0f);
     }
-    // Test construction/assignment/paramater pass of a vector type with
+    // Test construction/assignment/parameter pass of a vector type with
     // explicit .y, .y, .z components but no subscripting.
     {
         xy<float>   s{1, 2};
@@ -251,7 +251,7 @@ testInteropVec2 ()
         assert (v[0] == 1 && v[1] == 42);
         testVecVal2f (V2f (s), 1.0f, 42.0f);
     }
-    // Test construction/assignment/paramater pass of a std::vector of length 3
+    // Test construction/assignment/parameter pass of a std::vector of length 3
     {
         std::vector<float> s{1, 2};
         Vec2<float>        v (s);
@@ -261,7 +261,7 @@ testInteropVec2 ()
         assert (v[0] == 1 && v[1] == 42);
         testVecVal2f (V2f (s), 1.0f, 42.0f);
     }
-    // Test construction/assignment/paramater pass of a std::array of length 3
+    // Test construction/assignment/parameter pass of a std::array of length 3
     {
         std::array<float, 2> s{1, 2};
         Vec2<float>          v (s);
@@ -271,7 +271,7 @@ testInteropVec2 ()
         assert (v[0] == 1 && v[1] == 42);
         testVecVal2f (V2f (s), 1.0f, 42.0f);
     }
-    // Test construction/assignment/paramater pass of initializer lists.
+    // Test construction/assignment/parameter pass of initializer lists.
     {
         Vec2<float> v ({1.0f, 2.0f});
         assert (v[0] == 1 && v[1] == 2);
@@ -279,7 +279,7 @@ testInteropVec2 ()
         assert (v[0] == 1 && v[1] == 42);
         testVecVal2f ({1.0f, 42.0f}, 1.0f, 42.0f);
     }
-    // Test construction/assignment/paramater pass of a C array
+    // Test construction/assignment/parameter pass of a C array
     {
         float       s[2] = {1, 2};
         Vec2<float> v (s);
@@ -354,7 +354,7 @@ testInteropVec3 ()
     assert ((!has_subscript<xyz<float>, float, 3>::value));
     assert ((!has_subscript<xy<float>, float, 3>::value));
 
-    // Test construction/assignment/paramater pass of a vector type with
+    // Test construction/assignment/parameter pass of a vector type with
     // subscripting to access components.
     {
         SimpleVec<float, 3> s;
@@ -368,7 +368,7 @@ testInteropVec3 ()
         assert (v[0] == 1 && v[1] == 42 && v[2] == 3);
         testVecVal3f (V3f (s), 1.0f, 42.0f, 3.0f);
     }
-    // Test construction/assignment/paramater pass of a vector type with
+    // Test construction/assignment/parameter pass of a vector type with
     // explicit .y, .y, .z components but no subscripting.
     {
         xyz<float>  s{1, 2, 3};
@@ -379,7 +379,7 @@ testInteropVec3 ()
         assert (v[0] == 1 && v[1] == 42 && v[2] == 3);
         testVecVal3f (V3f (s), 1.0f, 42.0f, 3.0f);
     }
-    // Test construction/assignment/paramater pass of a std::vector of length 3
+    // Test construction/assignment/parameter pass of a std::vector of length 3
     {
         std::vector<float> s{1, 2, 3};
         Vec3<float>        v (s);
@@ -389,7 +389,7 @@ testInteropVec3 ()
         assert (v[0] == 1 && v[1] == 42 && v[2] == 3);
         testVecVal3f (V3f (s), 1.0f, 42.0f, 3.0f);
     }
-    // Test construction/assignment/paramater pass of a std::array of length 3
+    // Test construction/assignment/parameter pass of a std::array of length 3
     {
         std::array<float, 3> s{1, 2, 3};
         Vec3<float>          v (s);
@@ -399,7 +399,7 @@ testInteropVec3 ()
         assert (v[0] == 1 && v[1] == 42 && v[2] == 3);
         testVecVal3f (V3f (s), 1.0f, 42.0f, 3.0f);
     }
-    // Test construction/assignment/paramater pass of initializer lists.
+    // Test construction/assignment/parameter pass of initializer lists.
     {
         Vec3<float> v ({1.0f, 2.0f, 3.0f});
         assert (v[0] == 1 && v[1] == 2 && v[2] == 3);
@@ -407,7 +407,7 @@ testInteropVec3 ()
         assert (v[0] == 1 && v[1] == 42 && v[2] == 3);
         testVecVal3f ({1.0f, 42.0f, 3.0f}, 1, 42, 3);
     }
-    // Test construction/assignment/paramater pass of a C array
+    // Test construction/assignment/parameter pass of a C array
     {
         float       s[3] = {1, 2, 3};
         Vec3<float> v (s);
@@ -482,7 +482,7 @@ testInteropVec4 ()
     assert ((!has_subscript<xyzw<float>, float, 4>::value));
     assert ((!has_subscript<xy<float>, float, 4>::value));
 
-    // Test construction/assignment/paramater pass of a vector type with
+    // Test construction/assignment/parameter pass of a vector type with
     // subscripting to access components.
     {
         SimpleVec<float, 4> s;
@@ -497,7 +497,7 @@ testInteropVec4 ()
         assert (v[0] == 1 && v[1] == 42 && v[2] == 3 && v[3] == 4);
         testVecVal4f (V4f (s), 1.0f, 42.0f, 3.0f, 4.0f);
     }
-    // Test construction/assignment/paramater pass of a vector type with
+    // Test construction/assignment/parameter pass of a vector type with
     // explicit .y, .y, .z components but no subscripting.
     {
         xyzw<float> s{1, 2, 3, 4};
@@ -508,7 +508,7 @@ testInteropVec4 ()
         assert (v[0] == 1 && v[1] == 42 && v[2] == 3 && v[3] == 4);
         testVecVal4f (V4f (s), 1.0f, 42.0f, 3.0f, 4.0f);
     }
-    // Test construction/assignment/paramater pass of a std::vector of length 3
+    // Test construction/assignment/parameter pass of a std::vector of length 3
     {
         std::vector<float> s{1, 2, 3, 4};
         Vec4<float>        v (s);
@@ -518,7 +518,7 @@ testInteropVec4 ()
         assert (v[0] == 1 && v[1] == 42 && v[2] == 3 && v[3] == 4);
         testVecVal4f (V4f (s), 1.0f, 42.0f, 3.0f, 4.0f);
     }
-    // Test construction/assignment/paramater pass of a std::array of length 3
+    // Test construction/assignment/parameter pass of a std::array of length 3
     {
         std::array<float, 4> s{1, 2, 3, 4};
         Vec4<float>          v (s);
@@ -528,7 +528,7 @@ testInteropVec4 ()
         assert (v[0] == 1 && v[1] == 42 && v[2] == 3 && v[3] == 4);
         testVecVal4f (V4f (s), 1.0f, 42.0f, 3.0f, 4.0f);
     }
-    // Test construction/assignment/paramater pass of initializer lists.
+    // Test construction/assignment/parameter pass of initializer lists.
     {
         Vec4<float> v ({1.0f, 2.0f, 3.0f, 4.0f});
         assert (v[0] == 1 && v[1] == 2 && v[2] == 3 && v[3] == 4);
@@ -536,7 +536,7 @@ testInteropVec4 ()
         assert (v[0] == 1 && v[1] == 42 && v[2] == 3 && v[3] == 4);
         testVecVal4f ({1.0f, 42.0f, 3.0f, 4.0f}, 1, 42, 3, 4);
     }
-    // Test construction/assignment/paramater pass of a C array
+    // Test construction/assignment/parameter pass of a C array
     {
         float       s[4] = {1, 2, 3, 4};
         Vec4<float> v (s);
@@ -575,7 +575,7 @@ testInteropMx2 ()
     assert ((!has_double_subscript<xyzw<float>, float, 2, 2>::value));
     assert ((!has_double_subscript<xy<float>, float, 2, 2>::value));
 
-    // Test construction/assignment/paramater pass of a vector type with
+    // Test construction/assignment/parameter pass of a vector type with
     // subscripting to access components.
     {
         Matrix22<float>    ref;
@@ -619,7 +619,7 @@ testInteropMx3 ()
     assert ((!has_double_subscript<xyzw<float>, float, 3, 3>::value));
     assert ((!has_double_subscript<xy<float>, float, 3, 3>::value));
 
-    // Test construction/assignment/paramater pass of a vector type with
+    // Test construction/assignment/parameter pass of a vector type with
     // subscripting to access components.
     {
         Matrix33<float>    ref;
@@ -669,7 +669,7 @@ testInteropMx4 ()
     assert ((!has_double_subscript<xyzw<float>, float, 4, 4>::value));
     assert ((!has_double_subscript<xy<float>, float, 4, 4>::value));
 
-    // Test construction/assignment/paramater pass of a vector type with
+    // Test construction/assignment/parameter pass of a vector type with
     // subscripting to access components.
     {
         Matrix44<float>    ref;
