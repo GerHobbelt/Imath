@@ -14,7 +14,7 @@ set(PYIMATHNUMPY_MODULE_SOURCES imathnumpymodule.cpp)
 # Build "imathnumpy", not "imathnumpy_d" in Debug.
 # Note this must appear before add_library
 
-set(CMAKE_DEBUG_POSTFIX "") 
+#set(CMAKE_DEBUG_POSTFIX "") 
 
 add_library(${PYIMATHNUMPY_MODULE} MODULE ${PYIMATHNUMPY_MODULE_SOURCES})
 

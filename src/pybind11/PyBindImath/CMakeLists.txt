@@ -106,7 +106,7 @@ set_target_properties(${PYBINDIMATH_MODULE} PROPERTIES
     OUTPUT_NAME ${PYBINDIMATH_MODULE_NAME} # override the _d suffix for Debug builds
     LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/python${Python3_VERSION_MAJOR}_${Python3_VERSION_MINOR}/"
     PREFIX ""
-    DEBUG_POSTFIX ""
+#    DEBUG_POSTFIX ""
 )
 
 target_link_libraries(${PYBINDIMATH_MODULE}

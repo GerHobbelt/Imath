@@ -176,7 +176,7 @@ set_target_properties(${PYIMATH_MODULE} PROPERTIES
     OUTPUT_NAME ${PYIMATH_MODULE_NAME} # override the _d suffix for Debug builds
     LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/python${Python3_VERSION_MAJOR}_${Python3_VERSION_MINOR}/"
     PREFIX ""
-    DEBUG_POSTFIX ""
+#    DEBUG_POSTFIX ""
 )
 
 target_include_directories(${PYIMATH_MODULE} PRIVATE ${Python3_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS})
