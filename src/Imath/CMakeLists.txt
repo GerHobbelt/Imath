@@ -146,7 +146,13 @@ if (IMATH_BUILD_APPLE_FRAMEWORKS)
       COMMENT "Copying resource files to Imath.framework/Resources in build directory"
     )
 else()
-    set_target_properties(${IMATH_LIBRARY} PROPERTIES OUTPUT_NAME "Imath${IMATH_LIB_SUFFIX}" )
+
+  set(IMATH_LIB_PREFIX)
+  if(WIN32 AND NOT BUILD_SHARED_LIBS)
+      set(IMATH_LIB_PREFIX "lib")
+  endif()
+
+    set_target_properties(${IMATH_LIBRARY} PROPERTIES OUTPUT_NAME "${IMATH_LIB_PREFIX}Imath${IMATH_LIB_SUFFIX}" )
 endif()
   
 #
